@@ -9,8 +9,7 @@ public class SortLib {
 		a=new int[]{1,2,4,5,3,4,6,4,23,4,2,3,4,5,9,8,7,53,43,7,54,23,38,99};				
 		
 	}
-	public void 
-	
+	//计数排序	
 	public void countSort(){
 		int max=99;
 		int n=a.length;

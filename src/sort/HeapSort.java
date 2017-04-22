@@ -4,11 +4,7 @@ public class HeapSort {
 	private static int[] sort = new int[] { 1, 0, 10, 20, 3, 5, 6, 4, 9, 8, 12,
 			17, 34, 11 };
 
-	public static void main(String[] args) {
-		buildMaxHeapify(sort);
-		heapSort(sort);
-		print(sort);
-	}
+
 
 	private static void buildMaxHeapify(int[] data) {
 		// 没有子节点的才需要创建最大堆，从最后一个的父节点开始
@@ -18,7 +14,6 @@ public class HeapSort {
 			maxHeapify(data, data.length, i);
 		}
 	}
-
 	/**
 	 * 创建最大堆
 	 *
@@ -111,5 +106,11 @@ public class HeapSort {
 	 */
 	private static double getLog(double param) {
 		return Math.log(param) / Math.log(2);
+	}
+	
+	public static void main(String[] args) {
+		buildMaxHeapify(sort);
+		heapSort(sort);
+		print(sort);
 	}
 }
